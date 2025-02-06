@@ -58,6 +58,7 @@ button {
 .footer__contact {
   margin: 0;
 }
-.footer__info {
+.footer__info,
+.footer p {
   margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */
