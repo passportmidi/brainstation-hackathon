@@ -1,3 +1,7 @@
+.main {
+  padding: 67px;
+}
+
 .color__container {
   display: flex;
   background-color: white;
@@ -6,7 +10,7 @@
 }
 .color__container div {
   border-right: 1px solid black;
-  width: 100%;
+  flex-basis: 33.33%;
   height: 170px;
 }
 .color__container__box1 {
@@ -17,4 +21,23 @@
 }
 .color__container__box3 {
   background-color: aqua;
+}
+
+.form-section {
+  margin-top: 10px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+input {
+  height: 40px;
+  width: 120px;
+}
+
+button {
+  margin-right: 10px;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
