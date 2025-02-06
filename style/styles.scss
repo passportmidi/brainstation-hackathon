@@ -1,70 +1,72 @@
 .header {
-    background-color: seashell;
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 
-    & h1 {
-        margin: 0;
-        padding: 21px 0 0 6px;
-    }
+  & h1 {
+    margin: 0;
+    padding: 21px 0 0 6px;
+  }
 }
 
 .main {
-    padding: 67px;
-    background-color: seashell;
-
+  padding: 67px;
 }
 
 .color__container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
 
-    display: flex;
-    background-color: white;
-    width: 100%;
-    border: 1px solid black;
+  & div {
+    border-right: 1px solid black;
+    width: 33.33%;
+    height: 200px;
+  }
 
+  &__box1 {
+    background-color: rgb(250, 174, 120);
+  }
 
-    & div {
+  &__box2 {
+    background-color: rgb(245, 226, 179);
+  }
 
-        border-right: 1px solid black;
-        width: 33.33%;
-        height: 200px;
+  &__box3 {
+    background-color: aqua;
+  }
+}
 
-    }
-
-    &__box1 {
-        background-color: rgb(250, 174, 120);
-    }
-
-    &__box2 {
-        background-color: rgb(245, 226, 179);
-    }
-
-    &__box3 {
-        background-color: aqua;
-    }
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-section {
-    margin: 32px;
-
+  margin: 32px;
 }
 
 label {
-    margin-right: 10px;
-    font-size: 2rem;
+  margin-right: 10px;
+  font-size: 2rem;
 }
 
 input {
-    height: 40px;
-    width: 120px;
+  height: 40px;
+  width: 120px;
 }
 
 button {
-    margin-right: 10px;
-    font-size: 1.5rem;
+  margin-right: 10px;
+  font-size: 1.5rem;
 }
 
 .footer {
+  &__contact {
+    margin: 0;
+  }
 
+<<<<<<< HEAD
     background-color: seashell;
 
     &__contact {
@@ -77,3 +79,9 @@ button {
     }
 
 }
+=======
+  &__info {
+    margin: 0 auto;
+  }
+}
+>>>>>>> a52d61c462b2950d8ad7667f917a7c85171cf194
