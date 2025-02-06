@@ -14,7 +14,8 @@ form.addEventListener("submit", async (e) => {
     for (let i = 0; i < 3; i++) {
       const color = resp.data.colors[i].hex.value;
       const el = document.querySelector(`.color__container__box${i+1}`);
-      el.style.backgroundColor = color; 
+      el.style.setProperty('background-color', color); 
+      el.textContent = color;
     }
   } catch (e) {
     console.log(e);
