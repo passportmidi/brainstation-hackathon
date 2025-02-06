@@ -1,12 +1,20 @@
 .color__container {
   display: flex;
-  background-color: #f1f1f1;
+  background-color: white;
   width: 100%;
+  border: 1px solid black;
 }
 .color__container div {
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
   border-right: 1px solid black;
   width: 100%;
+  height: 170px;
+}
+.color__container__box1 {
+  background-color: rgb(250, 174, 120);
+}
+.color__container__box2 {
+  background-color: rgb(245, 226, 179);
+}
+.color__container__box3 {
+  background-color: aqua;
 }/*# sourceMappingURL=styles.css.map */
