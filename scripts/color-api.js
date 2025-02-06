@@ -1,14 +1,20 @@
-render();
+const form = document.getElementById("colorForm");
 
-async function render() {
-    try {
-        const resp = await axios.get(`https://www.thecolorapi.com/scheme?hex=ffabcd&count=3`);
-        console.log(resp);
-        for(let i = 0; i < 3; i++) {
-            console.log(resp.data.colors[i].hex.value);
-        }
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  try {
+    const colorHex = e.target.colorPicker.value.slice(1);
+
+    console.log(`https://www.thecolorapi.com/scheme?hex=${colorHex}&count=3`);
+
+    const resp = await axios.get(
+      `https://www.thecolorapi.com/scheme?hex=${colorHex}&count=3`
+    );
+    console.log(resp);
+    for (let i = 0; i < 3; i++) {
+      console.log(resp.data.colors[i].hex.value);
     }
-    catch (error) {
-        console.log(error);
-    }
-}
+  } catch (e) {
+    console.log(e);
+  }
+});
