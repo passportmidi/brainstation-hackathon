@@ -1,5 +1,15 @@
+.header {
+  background-color: seashell;
+  margin-bottom: 0px;
+}
+.header h1 {
+  margin: 0;
+  padding: 21px 0 0 6px;
+}
+
 .main {
   padding: 67px;
+  background-color: seashell;
 }
 
 .color__container {
@@ -10,8 +20,8 @@
 }
 .color__container div {
   border-right: 1px solid black;
-  flex-basis: 33.33%;
-  height: 170px;
+  width: 33.33%;
+  height: 200px;
 }
 .color__container__box1 {
   background-color: rgb(250, 174, 120);
@@ -24,7 +34,7 @@
 }
 
 .form-section {
-  margin-top: 10px;
+  margin: 32px;
 }
 
 label {
@@ -40,4 +50,14 @@ input {
 button {
   margin-right: 10px;
   font-size: 1.5rem;
+}
+
+.footer {
+  background-color: seashell;
+}
+.footer__contact {
+  margin: 0;
+}
+.footer__info {
+  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */

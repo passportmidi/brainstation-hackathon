@@ -1,5 +1,16 @@
+.header {
+    background-color: seashell;
+    margin-bottom: 0px;
+
+    & h1 {
+        margin: 0;
+        padding: 21px 0 0 6px;
+    }
+}
+
 .main {
     padding: 67px;
+    background-color: seashell;
 
 }
 
@@ -14,8 +25,8 @@
     & div {
 
         border-right: 1px solid black;
-        flex-basis: 33.33%;
-        height: 170px;
+        width: 33.33%;
+        height: 200px;
 
     }
 
@@ -33,7 +44,8 @@
 }
 
 .form-section {
-    margin-top: 10px;
+    margin: 32px;
+
 }
 
 label {
@@ -49,4 +61,18 @@ input {
 button {
     margin-right: 10px;
     font-size: 1.5rem;
+}
+
+.footer {
+
+    background-color: seashell;
+
+    &__contact {
+        margin: 0;
+    }
+
+    &__info {
+        margin: 0 auto;
+    }
+
 }
