@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+const form = document.getElementById("colorForm");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -12,9 +12,7 @@ form.addEventListener("submit", async (e) => {
     );
     console.log(resp);
     for (let i = 0; i < 3; i++) {
-      const color = resp.data.colors[i].hex.value;
-      const el = document.querySelector(`.color__container__box${i+1}`);
-      el.style.backgroundColor = color; 
+      console.log(resp.data.colors[i].hex.value);
     }
   } catch (e) {
     console.log(e);
