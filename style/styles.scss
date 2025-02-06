@@ -11,28 +11,37 @@
   padding: 67px;
 }
 
-.color__container {
-  display: flex;
-  background-color: white;
-  width: 100%;
-  border: 1px solid black;
+.color {
+  &__container {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    border: 1px solid black;
 
-  & div {
-    border-right: 1px solid black;
-    width: 33.33%;
-    height: 200px;
+    & div {
+      border-right: 1px solid black;
+      width: stretch;
+      height: 200px;
+      position: relative;
+    }
+
+    &__box1 {
+      background-color: rgb(250, 174, 120);
+    }
+
+    &__box2 {
+      background-color: rgb(245, 226, 179);
+    }
+
+    &__box3 {
+      background-color: aqua;
+    }
   }
-
-  &__box1 {
-    background-color: rgb(250, 174, 120);
-  }
-
-  &__box2 {
-    background-color: rgb(245, 226, 179);
-  }
-
-  &__box3 {
-    background-color: aqua;
+  &__label {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 210px;
   }
 }
 
@@ -43,7 +52,7 @@
 }
 
 .form-section {
-  margin: 32px;
+  margin: 60px 32px;
 }
 
 label {
@@ -66,22 +75,7 @@ button {
     margin: 0;
   }
 
-<<<<<<< HEAD
-    background-color: seashell;
-
-    &__contact {
-        margin: 0;
-    }
-
-    &__info,
-    p {
-        margin: 0 auto;
-    }
-
-}
-=======
   &__info {
     margin: 0 auto;
   }
 }
->>>>>>> a52d61c462b2950d8ad7667f917a7c85171cf194

@@ -18,8 +18,11 @@
 }
 .color__container div {
   border-right: 1px solid black;
-  width: 33.33%;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
   height: 200px;
+  position: relative;
 }
 .color__container__box1 {
   background-color: rgb(250, 174, 120);
@@ -30,6 +33,12 @@
 .color__container__box3 {
   background-color: aqua;
 }
+.color__label {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 210px;
+}
 
 #form {
   display: flex;
@@ -38,7 +47,7 @@
 }
 
 .form-section {
-  margin: 32px;
+  margin: 60px 32px;
 }
 
 label {
@@ -59,7 +68,6 @@ button {
 .footer__contact {
   margin: 0;
 }
-.footer__info,
-.footer p {
+.footer__info {
   margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */
